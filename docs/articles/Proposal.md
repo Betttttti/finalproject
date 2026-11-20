@@ -16,9 +16,9 @@ following no such change?
 
 **Data and population.** The unit of analysis will be one state in one
 calendar year, covering the 50 states from 2014 through 2024. I will use
-the course package’s `gunleg` records from the RAND State Firearm Law
-Database and its `cdcfiremort` table from CDC’s National Center for
-Health Statistics. I will join the sources by state and year after
+`gunleg` for RAND state firearm law changes and `cdcfiremort` for state
+firearm mortality rates from the CDC’s National Center for Health
+Statistics. I will join the sources by state and year after
 standardizing state names and checking that the mortality table has one
 record per state-year.
 
@@ -53,10 +53,10 @@ different numbers of reported illnesses than outbreaks linked
 exclusively to untreated water?
 
 **Data and population.** The unit of analysis will be one reported U.S.
-outbreak in the course package’s `waterborne` extract from the CDC
-National Outbreak Reporting System. I will convert the nested list into
-one row per outbreak, check for duplicate record IDs, and retain records
-whose primary transmission mode is water. I will document the years and
+outbreak in `waterborne` extract from the CDC National Outbreak
+Reporting System. I will convert the nested list into one row per
+outbreak, check for duplicate record IDs, and retain records whose
+primary transmission mode is water. I will document the years and
 reporting locations represented in the extract.
 
 **Exposure and outcome.** I will code `water_exposure` as treated or
@@ -77,5 +77,5 @@ recreational-water use and outbreak detection can differ across seasons,
 years, and locations. I will derive season from the reported month and
 report missing adjustment values. The findings will apply to reported
 outbreaks. The dataset does not provide the number of people exposed to
-each water type, so I will estimate outbreak size rather than individual
-illness risk.
+each water type, so I will estimate outbreak size rather than illness
+risk.
